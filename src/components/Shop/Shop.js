@@ -23,8 +23,16 @@ const Shop = () => {
       coffee.quantity = coffee.quantity + 1;
       coffeeCart = [...rest, exists];
     }
-    console.log(coffee);
-    setCoffee(coffeeCart);
+    setCoffee(coffeeCart.slice(0, 4));
+  };
+  const deleteItem = (id) => {
+    const deleteItem = coffee.filter((c) => c.id !== id);
+    setCoffee(deleteItem);
+  };
+
+  //   clear all cart item
+  const clearAll = () => {
+    setCoffee([]);
   };
   return (
     <section className="shop">
@@ -40,11 +48,17 @@ const Shop = () => {
       <div className="cart-details">
         <h4>Selected Coffees :</h4>
         {coffee.map((coffee) => (
-          <Cartdetails coffee={coffee} key={coffee.id}></Cartdetails>
+          <Cartdetails
+            coffee={coffee}
+            deleteItem={deleteItem}
+            key={coffee.id}
+          ></Cartdetails>
         ))}
         <div className="cart-btns">
           <div className="btn">Choose 1 for me</div>
-          <div className="btn">Choose Again</div>
+          <div className="btn" onClick={clearAll}>
+            Choose Again
+          </div>
         </div>
       </div>
     </section>
