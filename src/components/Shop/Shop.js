@@ -23,6 +23,10 @@ const Shop = () => {
       coffee.quantity = coffee.quantity + 1;
       coffeeCart = [...rest, exists];
     }
+    if (coffee.length === 4) {
+      alert("can't add more item");
+    }
+
     setCoffee(coffeeCart.slice(0, 4));
   };
   const deleteItem = (id) => {
