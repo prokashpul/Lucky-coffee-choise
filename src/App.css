@@ -14,7 +14,6 @@
   --white-color: #fff;
   --block-color: 022e57;
   --transition: all 400ms ease;
-  --border: 1px solid var(--rose-color);
   --container-lg: 85%;
   --container-md: 90%;
   --container-sm: 94%;
@@ -42,6 +41,19 @@ h3 {
 }
 h4 {
   font-size: 1.5rem;
+}
+.btn {
+  padding: 10px 20px;
+  background-color: var(--warning-color);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: var(--transition);
+  font-size: 18px;
+  font-weight: 400;
+}
+.btn:hover {
+  border-color: var(--warning-color);
+  background-color: transparent;
 }
 @media (max-width: 920px) {
   .container {
