@@ -13,7 +13,7 @@ const Shop = () => {
     <section className="shop">
       <div className="coffee-items">
         {coffeeItems?.map((coffee) => (
-          <Coffeeitems></Coffeeitems>
+          <Coffeeitems coffee={coffee} key={coffee.id}></Coffeeitems>
         ))}
       </div>
       <div className="cart-details">Selected Coffees</div>

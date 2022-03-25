@@ -45,15 +45,18 @@ h4 {
 .btn {
   padding: 10px 20px;
   background-color: var(--warning-color);
+  color: var(--white-color);
   border: 1px solid transparent;
   border-radius: 10px;
   transition: var(--transition);
   font-size: 18px;
   font-weight: 400;
+  cursor: pointer;
 }
 .btn:hover {
-  border-color: var(--warning-color);
+  border-color: var(--secondary-color);
   background-color: transparent;
+  color: var(--secondary-color);
 }
 @media (max-width: 920px) {
   .container {
