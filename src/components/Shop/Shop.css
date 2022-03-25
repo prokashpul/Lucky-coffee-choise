@@ -28,6 +28,13 @@
   font-size: 1.2rem;
   margin: 14px 0;
 }
+.cart-btns .btn {
+  padding: 8px 15px;
+  margin: 10px;
+  text-align: center;
+  display: block;
+}
+
 @media (max-width: 678px) {
   .shop {
     grid-template-columns: 1fr;

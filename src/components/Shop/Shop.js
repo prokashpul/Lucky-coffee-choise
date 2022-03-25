@@ -12,8 +12,19 @@ const Shop = () => {
       .then((data) => setCoffeItems(data));
   }, []);
   //   addcart button click handel add
-  const addCart = (coffee) => {
-    setCoffee(coffee);
+  const addCart = (getCoffee) => {
+    let coffeeCart = [];
+    const exists = coffee.find((c) => c.id === getCoffee.id);
+    if (!exists) {
+      coffee.quantity = 1;
+      coffeeCart = [...coffee, getCoffee];
+    } else {
+      const rest = coffee.filter((c) => c.id !== getCoffee.id);
+      coffee.quantity = coffee.quantity + 1;
+      coffeeCart = [...rest, exists];
+    }
+    console.log(coffee);
+    setCoffee(coffeeCart);
   };
   return (
     <section className="shop">
@@ -28,7 +39,13 @@ const Shop = () => {
       </div>
       <div className="cart-details">
         <h4>Selected Coffees :</h4>
-        <Cartdetails coffee={coffee}></Cartdetails>
+        {coffee.map((coffee) => (
+          <Cartdetails coffee={coffee} key={coffee.id}></Cartdetails>
+        ))}
+        <div className="cart-btns">
+          <div className="btn">Choose 1 for me</div>
+          <div className="btn">Choose Again</div>
+        </div>
       </div>
     </section>
   );

@@ -11,8 +11,6 @@ const Cartdetails = ({ coffee }) => {
         <h5>{name}</h5>
         <FontAwesomeIcon icon={faTrash} />
       </div>
-      <div className="btn">Choose 1 for me</div>
-      <di className="btn">Choose Again</di>
     </div>
   );
 };
