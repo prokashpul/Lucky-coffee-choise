@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Espresso Coffee",
+    "price": 12,
+    "image": "https://www.storypick.com/wp-content/uploads/2016/03/espresso-shot.jpg",
+    "description": "Espresso as a standalone coffee is served everywhere. It contains literally the basic essence. Coffee and water. No strings attached.",
+    "id": 1
+  },
+  {
+    "name": "Doppio coffee",
+    "price": 8,
+    "image": "https://www.storypick.com/wp-content/uploads/2016/03/Doppio.jpg",
+    "description": "Doppio in Italian literally means ‘double.’ It is a double shot of Espresso coffee.",
+    "id": 2
+  },
+  {
+    "name": "Macchiato Coffee",
+    "price": 12,
+    "image": "https://www.storypick.com/wp-content/uploads/2016/03/espresso_macchiato.jpg",
+    "description": "Macchiato in Italian means ‘stained.’ This is because a serving of Macchiato is a normal Espresso shot with a little-foamed milk on the top.",
+    "id": 3
+  },
+  {
+    "name": "Cappuccino Coffee",
+    "price": 10,
+    "image": "https://www.storypick.com/wp-content/uploads/2016/03/CAPPUCCINO-COFFEE.jpg",
+    "description": "Everyone’s favourite and the most well-known and standard coffee drink, cappuccino contains more milk-to-coffee ratio.",
+    "id": 4
+  },
+  {
+    "name": "Flat White Coffee",
+    "price": 15,
+    "image": "https://www.storypick.com/wp-content/uploads/2016/03/img_0470.jpg",
+    "description": "A slight variation of the more generalised Cappucino, a Flat White is a no-nonsense Cappuccino with double the amount of milk as compared to coffee.",
+    "id": 5
+  },
+  {
+    "name": "Café au Lait Coffee",
+    "price": 9,
+    "image": "https://www.storypick.com/wp-content/uploads/2016/03/56dff3681dc52417458b4736.jpg",
+    "description": "Café au Lait literally means ‘coffee with milk.’ It is a French press coffee preparation with equal amounts coffee brew and scalded milk. Scalded milk is milk that is heated to 82° C to kill off bacteria and remove many proteins.",
+    "id": 6
+  },
+  {
+    "name": "Turkish Coffee",
+    "price": 12,
+    "image": "https://www.storypick.com/wp-content/uploads/2016/03/turkish-coffee.jpg",
+    "description": "The Turkish like their coffee light and sweet. Hence, a majority of this coffee is sugar water.",
+    "id": 7
+  },
+  {
+    "name": "Irish Coffee",
+    "price": 18,
+    "image": "https://www.storypick.com/wp-content/uploads/2016/03/Old-Fashioned-Irish-Coffee.jpg",
+    "description": "The Irish sure know to stir things up and making literally any dish or drink interesting. Ever heard whiskey in coffee? Yep! This is the one.",
+    "id": 8
+  },
+  {
+    "name": "Americano Coffee",
+    "price": 12,
+    "image": "https://www.storypick.com/wp-content/uploads/2016/03/americano.jpg",
+    "description": "Those who say they like their coffee black talk about Café Americano. If you might have seen in Western media, Americans like to drink their coffee straight out of the pot.",
+    "id": 9
+  },
+  {
+    "name": "Long Black Coffee",
+    "price": 12,
+    "image": "https://www.storypick.com/wp-content/uploads/2016/03/Long-Black.jpg",
+    "description": "In essence, Long Black and Café Americano are the same thing, but it makes a world of difference to coffee connoisseurs.",
+    "id": 10
+  },
+  {
+    "name": "Vienna Mocha coffee",
+    "price": 18,
+    "image": "https://www.storypick.com/wp-content/uploads/2016/03/1519e954ae6bd629544356cae3e51766_XL.jpg",
+    "description": "Or simply known as Vienna Coffee, this coffee is a fun-loving twist to your regular Espresso shot. What’s the twist, you ask? WHIPPED CREAM!",
+    "id": 11
+  },
+  {
+    "name": "Frappé Coffee",
+    "price": 22,
+    "image": "",
+    "description": "One of the fanciest coffee drinks out there, and the one that contains the least amount of coffee in comparison to other items. This Starbucks favourite has to be served cold to be enjoyed.",
+    "id": 12
+  }
+]

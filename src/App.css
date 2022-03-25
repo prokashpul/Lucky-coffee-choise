@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  list-style: none;
+}
+:root {
+  --primary-color: #041562;
+  --secondary-color: #11468f;
+  --rose-color: #da1212;
+  --white-color: #fff;
+  --transition: all 400ms ease;
+  --border: 1px solid var(--rose-color);
+  --container-lg: 85%;
+  --container-md: 90%;
+  --container-sm: 94%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+style {
+  font-family: "Inter", sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container {
+  width: var(--container-lg);
+  margin: 0 auto;
+  background-color: #da1212;
+}
+@media (max-width: 920px) {
+  .container {
+    width: var(--container-md);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 678px) {
+  .container {
+    width: var(--container-sm);
   }
 }
