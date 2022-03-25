@@ -1,0 +1,29 @@
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--warning-color);
+  color: var(--white-color);
+  border-bottom: 1px solid var(--white-color);
+}
+.answer {
+  background-color: aquamarine;
+  height: 0;
+  overflow-y: scroll;
+  transition: var(--transition);
+}
+.answer p {
+  padding: 10px 20px 20px;
+  font-size: 20px;
+}
+.faqs {
+  margin: 50px 0;
+}
+.open {
+  height: 120px;
+}
+.icon {
+  transform: rotate3d(180deg);
+  transition: all 1s ease;
+}

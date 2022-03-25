@@ -1,0 +1,9 @@
+.faqs {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+}
+.faqs h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}

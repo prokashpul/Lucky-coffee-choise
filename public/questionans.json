@@ -1,0 +1,28 @@
+[
+  {
+    "question": "How to react work?",
+    "answer": "Reactjs is a javascript library.react function behind the screen as a virtual DOM. When we create a jsx component, jsx converts it to maintain pure javascript code and work as a tree. When changing the react state, create a virtual dome and capture this change and place it in the real dome. Reactjs is a way to convert jsx / javascript code to HTML code. This is why React manipulated web sites are very first and give a smooth UI .",
+    "id": "1"
+  },
+  {
+    "question": "Difference Between Props vs state ?",
+    "propsDef": [
+      "Props : ",
+      "1. Props is immutable. ",
+      " 2. Props are read-only. ",
+      " 3. props can send data one component to other component. "
+    ],
+    "states": [
+      "State:  ",
+      "1 . state is mutable. ",
+      " 2. State data can be change. ",
+      " 3. State can not access childe components. "
+    ],
+    "id": "2"
+  },
+  {
+    "question": "How to useState work?",
+    "answer": "useState work at asynchronous. It,s can be store multiple data and change data. When the state change then the component are re-randier. and it,s object initialized in the component. State update value in object and array. ",
+    "id": "3"
+  }
+]
