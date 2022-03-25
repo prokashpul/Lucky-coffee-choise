@@ -29,6 +29,15 @@ const Shop = () => {
     const deleteItem = coffee.filter((c) => c.id !== id);
     setCoffee(deleteItem);
   };
+  //   random item show
+  const oneItem = () => {
+    const randomCoffee = coffee[Math.floor(Math.random() * coffee.length)];
+    if (coffee.length > 0) {
+      setCoffee([randomCoffee]);
+    } else {
+      alert("Pleas cart 1 to 4 item");
+    }
+  };
 
   //   clear all cart item
   const clearAll = () => {
@@ -55,7 +64,9 @@ const Shop = () => {
           ></Cartdetails>
         ))}
         <div className="cart-btns">
-          <div className="btn">Choose 1 for me</div>
+          <div className="btn" onClick={oneItem}>
+            Choose 1 for me
+          </div>
           <div className="btn" onClick={clearAll}>
             Choose Again
           </div>
