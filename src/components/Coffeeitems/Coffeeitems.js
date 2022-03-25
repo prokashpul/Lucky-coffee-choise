@@ -2,7 +2,7 @@ import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./Coffeeitems.css";
-const Coffeeitems = ({ coffee }) => {
+const Coffeeitems = ({ coffee, addCart }) => {
   const { name, image, price, description } = coffee;
   return (
     <div className="coffee-card">
@@ -14,7 +14,7 @@ const Coffeeitems = ({ coffee }) => {
         <p>{description?.slice(0, 50) + " ..."}</p>
         <strong>${price}</strong>
       </div>
-      <button className="btn">
+      <button className="btn" onClick={() => addCart(coffee)}>
         Add To cart <FontAwesomeIcon icon={faCartPlus}></FontAwesomeIcon>
       </button>
     </div>

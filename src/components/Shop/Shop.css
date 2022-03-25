@@ -19,7 +19,14 @@
   margin-top: 20px;
 }
 .cart-details {
-  max-height: 60vh;
+  max-height: 90vh;
+  position: sticky;
+  top: 15px;
+}
+.cart-details h4 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 14px 0;
 }
 @media (max-width: 678px) {
   .shop {
@@ -28,5 +35,9 @@
   .coffee-items {
     order: 1;
     grid-template-columns: 1fr;
+  }
+  .cart-details {
+    position: relative;
+    margin-bottom: 2px;
   }
 }
