@@ -1,6 +1,5 @@
 .coffee-card {
   background-color: var(--primary-color);
-  border: 1px solid var(--secondary-color);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 0 14px 0 var(--primary-color);
@@ -17,5 +16,5 @@
   margin: 10px 0;
 }
 .coffee-card .btn {
-  margin: 10px 15px;
+  margin: 15px;
 }
