@@ -1,5 +1,4 @@
 const addToCartLocalStore = (id) => {
-  console.log(id);
   let saveDataLocalstore = getLocalStorageData();
 
   const getDataLocalStore = localStorage.getItem("coffee-id");

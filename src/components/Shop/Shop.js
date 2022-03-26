@@ -62,9 +62,11 @@ const Shop = () => {
 
   //   random item show
   const oneItem = () => {
+    deleteItems();
     const randomCoffee = coffee[Math.floor(Math.random() * coffee.length)];
+    let randomItem = [randomCoffee];
     if (coffee.length > 0) {
-      setCoffee([randomCoffee]);
+      setCoffee(randomItem);
     } else {
       alert("Pleas cart 1 to 4 item");
     }
