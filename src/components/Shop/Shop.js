@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { addToCartLocalStore } from "../../Utilities/Localstorage";
 import Cartdetails from "../Cartdetails/Cartdetails";
 import Coffeeitems from "../Coffeeitems/Coffeeitems";
 import "./Shop.css";
@@ -24,10 +25,11 @@ const Shop = () => {
       coffeeCart = [...rest, exists];
     }
     if (coffee.length === 4) {
-      alert("can't add more item");
+      alert("can't add more then 4 item");
     }
 
     setCoffee(coffeeCart.slice(0, 4));
+    addToCartLocalStore(getCoffee.id);
   };
   const deleteItem = (id) => {
     const deleteItem = coffee.filter((c) => c.id !== id);
