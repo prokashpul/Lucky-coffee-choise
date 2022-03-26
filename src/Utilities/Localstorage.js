@@ -26,5 +26,21 @@ const getLocalStorageData = () => {
   }
   return saveDataLocalstore;
 };
-
-export { addToCartLocalStore, getLocalStorageData };
+// delete items localstore
+const removeItemLocalStore = (id) => {
+  const removeData = getLocalStorageData();
+  if (id in removeData) {
+    delete removeData[id];
+    localStorage.setItem("coffee-id", JSON.stringify(removeData));
+  }
+};
+// delete all items
+const deleteItems = () => {
+  localStorage.removeItem("coffee-id");
+};
+export {
+  addToCartLocalStore,
+  getLocalStorageData,
+  deleteItems,
+  removeItemLocalStore as removeItem,
+};

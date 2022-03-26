@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import {
   addToCartLocalStore,
+  deleteItems,
   getLocalStorageData,
+  removeItem,
 } from "../../Utilities/Localstorage";
 import Cartdetails from "../Cartdetails/Cartdetails";
 import Coffeeitems from "../Coffeeitems/Coffeeitems";
@@ -24,7 +26,6 @@ const Shop = () => {
       const findCoffee = coffeeItems.find(
         (coffee) => coffee.id === parseInt(id)
       );
-      console.log(findCoffee);
       if (findCoffee) {
         const quantity = getData[id];
         findCoffee.quantity = quantity;
@@ -53,9 +54,12 @@ const Shop = () => {
     addToCartLocalStore(getCoffee.id);
   };
   const deleteItem = (id) => {
-    const deleteItem = coffee.filter((c) => c.id !== id);
-    setCoffee(deleteItem);
+    let deleteItem = coffee.filter((c) => c.id !== id);
+    const removeData = removeItem(id);
+    let deleteItemLcalStore = coffee.filter((c) => c.id !== removeData);
+    setCoffee(deleteItem, deleteItemLcalStore);
   };
+
   //   random item show
   const oneItem = () => {
     const randomCoffee = coffee[Math.floor(Math.random() * coffee.length)];
@@ -69,6 +73,7 @@ const Shop = () => {
   //   clear all cart item
   const clearAll = () => {
     setCoffee([]);
+    deleteItems();
   };
   return (
     <section className="shop">
