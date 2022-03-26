@@ -35,6 +35,15 @@
   display: block;
 }
 
+@media (max-width: 920px) {
+  .shop {
+    grid-template-columns: 5fr 2fr;
+  }
+  .coffee-items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 678px) {
   .shop {
     grid-template-columns: 1fr;
