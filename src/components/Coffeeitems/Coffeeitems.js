@@ -2,10 +2,13 @@ import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./Coffeeitems.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Coffeeitems = ({ coffee, addCart }) => {
+  AOS.init();
   const { name, image, price, description } = coffee;
   return (
-    <div className="coffee-card">
+    <div className="coffee-card" data-aos="fade-up">
       <div className="card-image">
         <img src={image} alt={name} />
       </div>
