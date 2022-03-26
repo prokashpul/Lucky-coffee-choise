@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { addToCartLocalStore } from "../../Utilities/Localstorage";
+import {
+  addToCartLocalStore,
+  getLocalStorageData,
+} from "../../Utilities/Localstorage";
 import Cartdetails from "../Cartdetails/Cartdetails";
 import Coffeeitems from "../Coffeeitems/Coffeeitems";
 import "./Shop.css";
@@ -12,6 +15,24 @@ const Shop = () => {
       .then((res) => res.json())
       .then((data) => setCoffeItems(data));
   }, []);
+
+  // localstorege data get
+  useEffect(() => {
+    const getData = getLocalStorageData();
+    let saveData = [];
+    for (const id in getData) {
+      const findCoffee = coffeeItems.find(
+        (coffee) => coffee.id === parseInt(id)
+      );
+      console.log(findCoffee);
+      if (findCoffee) {
+        const quantity = getData[id];
+        findCoffee.quantity = quantity;
+        saveData.push(findCoffee);
+      }
+    }
+    setCoffee(saveData.slice(0, 4));
+  }, [coffeeItems]);
   //   addcart button click handel add
   const addCart = (getCoffee) => {
     let coffeeCart = [];

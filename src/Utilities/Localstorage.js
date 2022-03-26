@@ -1,6 +1,6 @@
 const addToCartLocalStore = (id) => {
   console.log(id);
-  let saveDataLocalstore = {};
+  let saveDataLocalstore = getLocalStorageData();
 
   const getDataLocalStore = localStorage.getItem("coffee-id");
   if (getDataLocalStore) {
@@ -16,4 +16,15 @@ const addToCartLocalStore = (id) => {
   localStorage.setItem("coffee-id", JSON.stringify(saveDataLocalstore));
 };
 
-export { addToCartLocalStore };
+// get data
+const getLocalStorageData = () => {
+  let saveDataLocalstore = {};
+
+  const getDataLocalStore = localStorage.getItem("coffee-id");
+  if (getDataLocalStore) {
+    saveDataLocalstore = JSON.parse(localStorage.getItem("coffee-id"));
+  }
+  return saveDataLocalstore;
+};
+
+export { addToCartLocalStore, getLocalStorageData };
